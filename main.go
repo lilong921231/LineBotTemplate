@@ -44,7 +44,7 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 		}
 		return
 	}
-x
+
 var button {
   "type": "template",
   "altText": "This is a buttons template",
