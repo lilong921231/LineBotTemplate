@@ -45,7 +45,7 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-var button {
+{
   "type": "template",
   "altText": "This is a buttons template",
   "template": {
@@ -86,7 +86,7 @@ var button {
 		if event.Type == linebot.EventTypeMessage {
 			switch message := event.Message.(type) {
 			case *linebot.TextMessage:
-				if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(message.ID+":"+button+" lilong")).Do(); err != nil {
+				if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(message.ID+":"+message.Text+" lilong")).Do(); err != nil {
 					log.Print(err)
 				}
 			}
